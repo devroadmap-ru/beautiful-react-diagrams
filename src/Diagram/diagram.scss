@@ -4,7 +4,7 @@
   height: 100%;
   border: 0.07rem solid #dae1e7;
   border-radius: 0.25rem;
-  box-shadow: 0 0.8rem 1rem -0.2rem rgba(0, 0, 0, 0.1), 0 0.25rem 0.5rem -0.02rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.8rem 1rem -0.2rem rgba(0 0 0 / 10%), 0 0.25rem 0.5rem -0.02rem rgba(0 0 0 / 5%);
   min-height: 100%;
   background-color: #f8fafc;
   position: relative;
@@ -28,13 +28,13 @@
 
         .bi-diagram-port {
           transition: background-color 0.25s ease-in-out;
-          background-color: rgba(0, 0, 0, 0.08);
+          background-color: rgba(0 0 0 / 8%);
           width: 1.25rem;
           height: 1.25rem;
           margin-bottom: 0.25rem;
 
           &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0 0 0 / 10%);
           }
         }
       }
@@ -55,11 +55,11 @@
       background-color: #dae1e7;
       color: #606f7b;
       border-radius: 0.25rem;
-      box-shadow: 0 0.07rem 0.2rem 0 rgba(0, 0, 0, 0.1), 0 0.07rem 0.125rem 0 rgba(0, 0, 0, 0.06);
+      box-shadow: 0 0.07rem 0.2rem 0 rgba(0 0 0 / 10%), 0 0.07rem 0.125rem 0 rgba(0 0 0 / 6%);
       padding: 0.5rem;
 
       &:hover {
-        box-shadow: 0 0.125rem 1rem -0.2rem rgba(0, 0, 0, 0.1), 0 0.25rem 0.3rem -125rem rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0.125rem 1rem -0.2rem rgba(0 0 0 / 10%), 0 0.25rem 0.3rem -125rem rgba(0 0 0 / 5%);
       }
 
       .bi-port-wrapper {
@@ -92,7 +92,7 @@
         stroke-width: 0.25rem;
         stroke-dasharray: 10, 2;
         fill: transparent;
-        animation: BiDashSegmentAnimation 1s linear infinite;
+        animation: bidashanimation 1s linear infinite;
       }
 
       circle {
@@ -132,7 +132,7 @@
       &:hover .bi-link-path {
         stroke: #88cdff;
         stroke-dasharray: 10, 2;
-        animation: BiDashSegmentAnimation 1s linear infinite;
+        animation: bidashanimation 1s linear infinite;
       }
 
       // readonly link
@@ -185,7 +185,7 @@
 // ----------------------------
 // Involved animations
 // ----------------------------
-@keyframes BiDashSegmentAnimation {
+@keyframes bidashanimation {
   from {
     stroke-dashoffset: 24;
   }

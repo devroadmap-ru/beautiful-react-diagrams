@@ -9,6 +9,7 @@ const portGenerator = ({ registerPort, onDragNewSegment, onSegmentFail, onSegmen
     onSegmentFail={onSegmentFail}
     onSegmentConnect={onSegmentConnect}
     type={type}
+    // eslint-disable-next-line react/destructuring-assignment
     key={port.id}
   />
 );
